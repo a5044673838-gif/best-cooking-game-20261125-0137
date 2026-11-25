@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a tiny kitchen, a lunch rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #241a12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #e8c99a; }
+  #help { color: #cbb894; font: 13px system-ui, sans-serif; text-align: center; padding: 8px; }
+  #help b { color: #ffd76a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">Move <b>WASD / arrows / click</b> &nbsp;·&nbsp; Interact <b>E</b> or click a station &nbsp;·&nbsp; Pause <b>P</b> &nbsp;·&nbsp; Restart <b>R</b></div>
+</div>
+<script src="./src/config.js"></script>
+<script src="./src/random.js"></script>
+<script src="./src/audio.js"></script>
+<script src="./src/input.js"></script>
+<script src="./src/world.js"></script>
+<script src="./src/render.js"></script>
+<script src="./src/shots.js"></script>
+<script src="./src/main.js"></script>
+</body>
+</html>
